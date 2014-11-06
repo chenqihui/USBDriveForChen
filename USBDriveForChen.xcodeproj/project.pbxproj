@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		741A0FB519FD031C00924C6C /* QHBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0FB219FD031C00924C6C /* QHBasicViewController.m */; };
+		741A0FB619FD031C00924C6C /* UIView+QHViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0FB419FD031C00924C6C /* UIView+QHViewExtend.m */; };
+		741A0FBD19FD062200924C6C /* QHCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0FBB19FD062200924C6C /* QHCommonUtil.m */; };
+		744ADFB81A06857E00BE5214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFB71A06857E00BE5214 /* UIKit.framework */; };
+		744ADFBA1A06859300BE5214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFB91A06859300BE5214 /* Foundation.framework */; };
+		744ADFBC1A06859B00BE5214 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFBB1A06859B00BE5214 /* CoreGraphics.framework */; };
+		744ADFDA1A0686AA00BE5214 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFC01A0686AA00BE5214 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFDB1A0686AA00BE5214 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFC21A0686AA00BE5214 /* DDData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFDC1A0686AA00BE5214 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFC41A0686AA00BE5214 /* DDNumber.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFDD1A0686AA00BE5214 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFC61A0686AA00BE5214 /* DDRange.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFDE1A0686AA00BE5214 /* FileResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFC81A0686AA00BE5214 /* FileResource.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFDF1A0686AA00BE5214 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFCA1A0686AA00BE5214 /* HTTPAuthenticationRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFE01A0686AA00BE5214 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFCC1A0686AA00BE5214 /* HTTPConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFE11A0686AA00BE5214 /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFCE1A0686AA00BE5214 /* HTTPResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFE21A0686AA00BE5214 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFD01A0686AA00BE5214 /* HTTPServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFE81A0686AA00BE5214 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFD91A0686AA00BE5214 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		744ADFEB1A06878300BE5214 /* WifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFEA1A06878300BE5214 /* WifiViewController.m */; };
+		744ADFED1A068C4D00BE5214 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFEC1A068C4D00BE5214 /* CFNetwork.framework */; };
+		744ADFEF1A068C5C00BE5214 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFEE1A068C5C00BE5214 /* libicucore.dylib */; };
+		74966BC319FEA0A000A9E99D /* QHFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74966BC219FEA0A000A9E99D /* QHFileHelper.m */; };
+		74966BC519FEAA0B00A9E99D /* hello.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74966BC419FEAA0B00A9E99D /* hello.txt */; };
+		74CA40271A0B6F240031E7FB /* docroot in Resources */ = {isa = PBXBuildFile; fileRef = 74CA40261A0B6F240031E7FB /* docroot */; };
+		74CA402F1A0B7B380031E7FB /* FileCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CA402E1A0B7B380031E7FB /* FileCollectionViewCell.m */; };
+		74CA403C1A0B82250031E7FB /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 74CA403B1A0B82250031E7FB /* Images */; };
+		74DE8F611A0BAE3800C0E399 /* QHDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DE8F601A0BAE3800C0E399 /* QHDialogView.m */; };
+		74DEDD1519F3FDAB00AA5A13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEDD1419F3FDAB00AA5A13 /* main.m */; };
+		74DEDD1819F3FDAB00AA5A13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEDD1719F3FDAB00AA5A13 /* AppDelegate.m */; };
+		74DEDD1B19F3FDAB00AA5A13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEDD1A19F3FDAB00AA5A13 /* ViewController.m */; };
+		74DEDD1E19F3FDAB00AA5A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DEDD1C19F3FDAB00AA5A13 /* Main.storyboard */; };
+		74DEDD2019F3FDAB00AA5A13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DEDD1F19F3FDAB00AA5A13 /* Images.xcassets */; };
+		74DEDD2319F3FDAB00AA5A13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DEDD2119F3FDAB00AA5A13 /* LaunchScreen.xib */; };
+		74DEDD2F19F3FDAB00AA5A13 /* USBDriveForChenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEDD2E19F3FDAB00AA5A13 /* USBDriveForChenTests.m */; };
+		74DEDD3D19F40F2F00AA5A13 /* UtilBottomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEDD3C19F40F2F00AA5A13 /* UtilBottomControl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74DEDD2919F3FDAB00AA5A13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74DEDD0719F3FDAB00AA5A13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74DEDD0E19F3FDAB00AA5A13;
+			remoteInfo = USBDriveForChen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		741A0FB119FD031C00924C6C /* QHBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHBasicViewController.h; sourceTree = "<group>"; };
+		741A0FB219FD031C00924C6C /* QHBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHBasicViewController.m; sourceTree = "<group>"; };
+		741A0FB319FD031C00924C6C /* UIView+QHViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QHViewExtend.h"; sourceTree = "<group>"; };
+		741A0FB419FD031C00924C6C /* UIView+QHViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QHViewExtend.m"; sourceTree = "<group>"; };
+		741A0FB719FD041400924C6C /* USBDriveForChen.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBDriveForChen.pch; sourceTree = "<group>"; };
+		741A0FBA19FD062200924C6C /* QHCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHCommonUtil.h; sourceTree = "<group>"; };
+		741A0FBB19FD062200924C6C /* QHCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHCommonUtil.m; sourceTree = "<group>"; };
+		741A0FBC19FD062200924C6C /* QHViewTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHViewTag.h; sourceTree = "<group>"; };
+		744ADFB71A06857E00BE5214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		744ADFB91A06859300BE5214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		744ADFBB1A06859B00BE5214 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		744ADFBF1A0686AA00BE5214 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		744ADFC01A0686AA00BE5214 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		744ADFC11A0686AA00BE5214 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		744ADFC21A0686AA00BE5214 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		744ADFC31A0686AA00BE5214 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		744ADFC41A0686AA00BE5214 /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		744ADFC51A0686AA00BE5214 /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		744ADFC61A0686AA00BE5214 /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		744ADFC71A0686AA00BE5214 /* FileResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileResource.h; sourceTree = "<group>"; };
+		744ADFC81A0686AA00BE5214 /* FileResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileResource.m; sourceTree = "<group>"; };
+		744ADFC91A0686AA00BE5214 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		744ADFCA1A0686AA00BE5214 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		744ADFCB1A0686AA00BE5214 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		744ADFCC1A0686AA00BE5214 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		744ADFCD1A0686AA00BE5214 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		744ADFCE1A0686AA00BE5214 /* HTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponse.m; sourceTree = "<group>"; };
+		744ADFCF1A0686AA00BE5214 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		744ADFD01A0686AA00BE5214 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		744ADFD81A0686AA00BE5214 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		744ADFD91A0686AA00BE5214 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		744ADFE91A06878300BE5214 /* WifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiViewController.h; sourceTree = "<group>"; };
+		744ADFEA1A06878300BE5214 /* WifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiViewController.m; sourceTree = "<group>"; };
+		744ADFEC1A068C4D00BE5214 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		744ADFEE1A068C5C00BE5214 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		74966BC119FEA0A000A9E99D /* QHFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHFileHelper.h; sourceTree = "<group>"; };
+		74966BC219FEA0A000A9E99D /* QHFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHFileHelper.m; sourceTree = "<group>"; };
+		74966BC419FEAA0B00A9E99D /* hello.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello.txt; sourceTree = "<group>"; };
+		74CA40261A0B6F240031E7FB /* docroot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docroot; sourceTree = "<group>"; };
+		74CA402D1A0B7B380031E7FB /* FileCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCollectionViewCell.h; sourceTree = "<group>"; };
+		74CA402E1A0B7B380031E7FB /* FileCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCollectionViewCell.m; sourceTree = "<group>"; };
+		74CA403B1A0B82250031E7FB /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		74DE8F5F1A0BAE3800C0E399 /* QHDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHDialogView.h; sourceTree = "<group>"; };
+		74DE8F601A0BAE3800C0E399 /* QHDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHDialogView.m; sourceTree = "<group>"; };
+		74DEDD0F19F3FDAB00AA5A13 /* USBDriveForChen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USBDriveForChen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DEDD1319F3FDAB00AA5A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DEDD1419F3FDAB00AA5A13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74DEDD1619F3FDAB00AA5A13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74DEDD1719F3FDAB00AA5A13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74DEDD1919F3FDAB00AA5A13 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		74DEDD1A19F3FDAB00AA5A13 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		74DEDD1D19F3FDAB00AA5A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74DEDD1F19F3FDAB00AA5A13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74DEDD2219F3FDAB00AA5A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		74DEDD2819F3FDAB00AA5A13 /* USBDriveForChenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USBDriveForChenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DEDD2D19F3FDAB00AA5A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DEDD2E19F3FDAB00AA5A13 /* USBDriveForChenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USBDriveForChenTests.m; sourceTree = "<group>"; };
+		74DEDD3B19F40F2F00AA5A13 /* UtilBottomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilBottomControl.h; sourceTree = "<group>"; };
+		74DEDD3C19F40F2F00AA5A13 /* UtilBottomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilBottomControl.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74DEDD0C19F3FDAB00AA5A13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744ADFEF1A068C5C00BE5214 /* libicucore.dylib in Frameworks */,
+				744ADFED1A068C4D00BE5214 /* CFNetwork.framework in Frameworks */,
+				744ADFBC1A06859B00BE5214 /* CoreGraphics.framework in Frameworks */,
+				744ADFBA1A06859300BE5214 /* Foundation.framework in Frameworks */,
+				744ADFB81A06857E00BE5214 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DEDD2519F3FDAB00AA5A13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		741A0FB019FD031C00924C6C /* ViewExtend */ = {
+			isa = PBXGroup;
+			children = (
+				74DE8F5F1A0BAE3800C0E399 /* QHDialogView.h */,
+				74DE8F601A0BAE3800C0E399 /* QHDialogView.m */,
+				741A0FB119FD031C00924C6C /* QHBasicViewController.h */,
+				741A0FB219FD031C00924C6C /* QHBasicViewController.m */,
+				741A0FB319FD031C00924C6C /* UIView+QHViewExtend.h */,
+				741A0FB419FD031C00924C6C /* UIView+QHViewExtend.m */,
+			);
+			path = ViewExtend;
+			sourceTree = "<group>";
+		};
+		741A0FB919FD062200924C6C /* QHUtills */ = {
+			isa = PBXGroup;
+			children = (
+				741A0FBA19FD062200924C6C /* QHCommonUtil.h */,
+				741A0FBB19FD062200924C6C /* QHCommonUtil.m */,
+				74966BC119FEA0A000A9E99D /* QHFileHelper.h */,
+				74966BC219FEA0A000A9E99D /* QHFileHelper.m */,
+				741A0FBC19FD062200924C6C /* QHViewTag.h */,
+			);
+			path = QHUtills;
+			sourceTree = "<group>";
+		};
+		744ADFBD1A0686AA00BE5214 /* Robin */ = {
+			isa = PBXGroup;
+			children = (
+				74CA40261A0B6F240031E7FB /* docroot */,
+				744ADFBE1A0686AA00BE5214 /* CocoaWebResource */,
+				744ADFD71A0686AA00BE5214 /* RegexKitLite */,
+			);
+			path = Robin;
+			sourceTree = "<group>";
+		};
+		744ADFBE1A0686AA00BE5214 /* CocoaWebResource */ = {
+			isa = PBXGroup;
+			children = (
+				744ADFBF1A0686AA00BE5214 /* AsyncSocket.h */,
+				744ADFC01A0686AA00BE5214 /* AsyncSocket.m */,
+				744ADFC11A0686AA00BE5214 /* DDData.h */,
+				744ADFC21A0686AA00BE5214 /* DDData.m */,
+				744ADFC31A0686AA00BE5214 /* DDNumber.h */,
+				744ADFC41A0686AA00BE5214 /* DDNumber.m */,
+				744ADFC51A0686AA00BE5214 /* DDRange.h */,
+				744ADFC61A0686AA00BE5214 /* DDRange.m */,
+				744ADFC71A0686AA00BE5214 /* FileResource.h */,
+				744ADFC81A0686AA00BE5214 /* FileResource.m */,
+				744ADFC91A0686AA00BE5214 /* HTTPAuthenticationRequest.h */,
+				744ADFCA1A0686AA00BE5214 /* HTTPAuthenticationRequest.m */,
+				744ADFCB1A0686AA00BE5214 /* HTTPConnection.h */,
+				744ADFCC1A0686AA00BE5214 /* HTTPConnection.m */,
+				744ADFCD1A0686AA00BE5214 /* HTTPResponse.h */,
+				744ADFCE1A0686AA00BE5214 /* HTTPResponse.m */,
+				744ADFCF1A0686AA00BE5214 /* HTTPServer.h */,
+				744ADFD01A0686AA00BE5214 /* HTTPServer.m */,
+			);
+			path = CocoaWebResource;
+			sourceTree = "<group>";
+		};
+		744ADFD71A0686AA00BE5214 /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				744ADFD81A0686AA00BE5214 /* RegexKitLite.h */,
+				744ADFD91A0686AA00BE5214 /* RegexKitLite.m */,
+			);
+			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
+		74DEDD0619F3FDAB00AA5A13 = {
+			isa = PBXGroup;
+			children = (
+				744ADFEE1A068C5C00BE5214 /* libicucore.dylib */,
+				744ADFEC1A068C4D00BE5214 /* CFNetwork.framework */,
+				744ADFBB1A06859B00BE5214 /* CoreGraphics.framework */,
+				744ADFB91A06859300BE5214 /* Foundation.framework */,
+				744ADFB71A06857E00BE5214 /* UIKit.framework */,
+				74DEDD1119F3FDAB00AA5A13 /* USBDriveForChen */,
+				74DEDD2B19F3FDAB00AA5A13 /* USBDriveForChenTests */,
+				74DEDD1019F3FDAB00AA5A13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74DEDD1019F3FDAB00AA5A13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74DEDD0F19F3FDAB00AA5A13 /* USBDriveForChen.app */,
+				74DEDD2819F3FDAB00AA5A13 /* USBDriveForChenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74DEDD1119F3FDAB00AA5A13 /* USBDriveForChen */ = {
+			isa = PBXGroup;
+			children = (
+				744ADFBD1A0686AA00BE5214 /* Robin */,
+				741A0FB919FD062200924C6C /* QHUtills */,
+				741A0FB019FD031C00924C6C /* ViewExtend */,
+				74DEDD3819F40A7F00AA5A13 /* view */,
+				74DEDD1619F3FDAB00AA5A13 /* AppDelegate.h */,
+				74DEDD1719F3FDAB00AA5A13 /* AppDelegate.m */,
+				74DEDD1919F3FDAB00AA5A13 /* ViewController.h */,
+				74DEDD1A19F3FDAB00AA5A13 /* ViewController.m */,
+				74CA402D1A0B7B380031E7FB /* FileCollectionViewCell.h */,
+				74CA402E1A0B7B380031E7FB /* FileCollectionViewCell.m */,
+				744ADFE91A06878300BE5214 /* WifiViewController.h */,
+				744ADFEA1A06878300BE5214 /* WifiViewController.m */,
+				74DEDD1C19F3FDAB00AA5A13 /* Main.storyboard */,
+				74DEDD1F19F3FDAB00AA5A13 /* Images.xcassets */,
+				74DEDD2119F3FDAB00AA5A13 /* LaunchScreen.xib */,
+				74DEDD1219F3FDAB00AA5A13 /* Supporting Files */,
+			);
+			path = USBDriveForChen;
+			sourceTree = "<group>";
+		};
+		74DEDD1219F3FDAB00AA5A13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74CA403B1A0B82250031E7FB /* Images */,
+				741A0FB719FD041400924C6C /* USBDriveForChen.pch */,
+				74DEDD1319F3FDAB00AA5A13 /* Info.plist */,
+				74DEDD1419F3FDAB00AA5A13 /* main.m */,
+				74966BC419FEAA0B00A9E99D /* hello.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74DEDD2B19F3FDAB00AA5A13 /* USBDriveForChenTests */ = {
+			isa = PBXGroup;
+			children = (
+				74DEDD2E19F3FDAB00AA5A13 /* USBDriveForChenTests.m */,
+				74DEDD2C19F3FDAB00AA5A13 /* Supporting Files */,
+			);
+			path = USBDriveForChenTests;
+			sourceTree = "<group>";
+		};
+		74DEDD2C19F3FDAB00AA5A13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74DEDD2D19F3FDAB00AA5A13 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74DEDD3819F40A7F00AA5A13 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				74DEDD3B19F40F2F00AA5A13 /* UtilBottomControl.h */,
+				74DEDD3C19F40F2F00AA5A13 /* UtilBottomControl.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74DEDD0E19F3FDAB00AA5A13 /* USBDriveForChen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DEDD3219F3FDAB00AA5A13 /* Build configuration list for PBXNativeTarget "USBDriveForChen" */;
+			buildPhases = (
+				74DEDD0B19F3FDAB00AA5A13 /* Sources */,
+				74DEDD0C19F3FDAB00AA5A13 /* Frameworks */,
+				74DEDD0D19F3FDAB00AA5A13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USBDriveForChen;
+			productName = USBDriveForChen;
+			productReference = 74DEDD0F19F3FDAB00AA5A13 /* USBDriveForChen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74DEDD2719F3FDAB00AA5A13 /* USBDriveForChenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DEDD3519F3FDAB00AA5A13 /* Build configuration list for PBXNativeTarget "USBDriveForChenTests" */;
+			buildPhases = (
+				74DEDD2419F3FDAB00AA5A13 /* Sources */,
+				74DEDD2519F3FDAB00AA5A13 /* Frameworks */,
+				74DEDD2619F3FDAB00AA5A13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74DEDD2A19F3FDAB00AA5A13 /* PBXTargetDependency */,
+			);
+			name = USBDriveForChenTests;
+			productName = USBDriveForChenTests;
+			productReference = 74DEDD2819F3FDAB00AA5A13 /* USBDriveForChenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74DEDD0719F3FDAB00AA5A13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = chen;
+				TargetAttributes = {
+					74DEDD0E19F3FDAB00AA5A13 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					74DEDD2719F3FDAB00AA5A13 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 74DEDD0E19F3FDAB00AA5A13;
+					};
+				};
+			};
+			buildConfigurationList = 74DEDD0A19F3FDAB00AA5A13 /* Build configuration list for PBXProject "USBDriveForChen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74DEDD0619F3FDAB00AA5A13;
+			productRefGroup = 74DEDD1019F3FDAB00AA5A13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74DEDD0E19F3FDAB00AA5A13 /* USBDriveForChen */,
+				74DEDD2719F3FDAB00AA5A13 /* USBDriveForChenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74DEDD0D19F3FDAB00AA5A13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DEDD1E19F3FDAB00AA5A13 /* Main.storyboard in Resources */,
+				74DEDD2319F3FDAB00AA5A13 /* LaunchScreen.xib in Resources */,
+				74DEDD2019F3FDAB00AA5A13 /* Images.xcassets in Resources */,
+				74CA40271A0B6F240031E7FB /* docroot in Resources */,
+				74CA403C1A0B82250031E7FB /* Images in Resources */,
+				74966BC519FEAA0B00A9E99D /* hello.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DEDD2619F3FDAB00AA5A13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74DEDD0B19F3FDAB00AA5A13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744ADFE81A0686AA00BE5214 /* RegexKitLite.m in Sources */,
+				744ADFEB1A06878300BE5214 /* WifiViewController.m in Sources */,
+				74DEDD1B19F3FDAB00AA5A13 /* ViewController.m in Sources */,
+				74DEDD1819F3FDAB00AA5A13 /* AppDelegate.m in Sources */,
+				74966BC319FEA0A000A9E99D /* QHFileHelper.m in Sources */,
+				744ADFDF1A0686AA00BE5214 /* HTTPAuthenticationRequest.m in Sources */,
+				744ADFE01A0686AA00BE5214 /* HTTPConnection.m in Sources */,
+				744ADFDB1A0686AA00BE5214 /* DDData.m in Sources */,
+				744ADFDA1A0686AA00BE5214 /* AsyncSocket.m in Sources */,
+				74DEDD3D19F40F2F00AA5A13 /* UtilBottomControl.m in Sources */,
+				744ADFE21A0686AA00BE5214 /* HTTPServer.m in Sources */,
+				744ADFE11A0686AA00BE5214 /* HTTPResponse.m in Sources */,
+				74DEDD1519F3FDAB00AA5A13 /* main.m in Sources */,
+				741A0FB519FD031C00924C6C /* QHBasicViewController.m in Sources */,
+				74DE8F611A0BAE3800C0E399 /* QHDialogView.m in Sources */,
+				74CA402F1A0B7B380031E7FB /* FileCollectionViewCell.m in Sources */,
+				741A0FBD19FD062200924C6C /* QHCommonUtil.m in Sources */,
+				744ADFDE1A0686AA00BE5214 /* FileResource.m in Sources */,
+				744ADFDD1A0686AA00BE5214 /* DDRange.m in Sources */,
+				741A0FB619FD031C00924C6C /* UIView+QHViewExtend.m in Sources */,
+				744ADFDC1A0686AA00BE5214 /* DDNumber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DEDD2419F3FDAB00AA5A13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DEDD2F19F3FDAB00AA5A13 /* USBDriveForChenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74DEDD2A19F3FDAB00AA5A13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74DEDD0E19F3FDAB00AA5A13 /* USBDriveForChen */;
+			targetProxy = 74DEDD2919F3FDAB00AA5A13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74DEDD1C19F3FDAB00AA5A13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DEDD1D19F3FDAB00AA5A13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74DEDD2119F3FDAB00AA5A13 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DEDD2219F3FDAB00AA5A13 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74DEDD3019F3FDAB00AA5A13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74DEDD3119F3FDAB00AA5A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74DEDD3319F3FDAB00AA5A13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = USBDriveForChen/USBDriveForChen.pch;
+				INFOPLIST_FILE = USBDriveForChen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74DEDD3419F3FDAB00AA5A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = USBDriveForChen/USBDriveForChen.pch;
+				INFOPLIST_FILE = USBDriveForChen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		74DEDD3619F3FDAB00AA5A13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = USBDriveForChenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/USBDriveForChen.app/USBDriveForChen";
+			};
+			name = Debug;
+		};
+		74DEDD3719F3FDAB00AA5A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = USBDriveForChenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/USBDriveForChen.app/USBDriveForChen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74DEDD0A19F3FDAB00AA5A13 /* Build configuration list for PBXProject "USBDriveForChen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DEDD3019F3FDAB00AA5A13 /* Debug */,
+				74DEDD3119F3FDAB00AA5A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74DEDD3219F3FDAB00AA5A13 /* Build configuration list for PBXNativeTarget "USBDriveForChen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DEDD3319F3FDAB00AA5A13 /* Debug */,
+				74DEDD3419F3FDAB00AA5A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74DEDD3519F3FDAB00AA5A13 /* Build configuration list for PBXNativeTarget "USBDriveForChenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DEDD3619F3FDAB00AA5A13 /* Debug */,
+				74DEDD3719F3FDAB00AA5A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74DEDD0719F3FDAB00AA5A13 /* Project object */;
+}

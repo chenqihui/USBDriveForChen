@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F14B1A03-DC7F-460D-BA86-0BA6AA854A8F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>USBDriveForChen</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AFB8D68F95C36296AF8E114B184965DCF197706F</key>
+		<string>https://github.com/chenqihui/USBDriveForChen.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>USBDriveForChen.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AFB8D68F95C36296AF8E114B184965DCF197706F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chenqihui/USBDriveForChen.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AFB8D68F95C36296AF8E114B184965DCF197706F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AFB8D68F95C36296AF8E114B184965DCF197706F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>USBDriveForChen</string>
+		</dict>
+	</array>
+</dict>
+</plist>
