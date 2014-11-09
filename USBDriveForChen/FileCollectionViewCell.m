@@ -46,7 +46,7 @@
     [self.contentView addSubview:_iconTitleLabel];
     
     _deleteView = [[UIImageView alloc] init];
-    [_deleteView setImage:[UIImage imageNamed:@"images/other/deleteTag.png"]];
+    [_deleteView setImage:[UIImage imageByPath:@"other/deleteTag.png"]];
     _deleteView.tag = APP_DELETE_TAG;
     [self.contentView addSubview:_deleteView];
     [_deleteView setHidden:YES];

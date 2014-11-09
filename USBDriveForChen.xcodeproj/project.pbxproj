@@ -10,6 +10,7 @@
 		741A0FB519FD031C00924C6C /* QHBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0FB219FD031C00924C6C /* QHBasicViewController.m */; };
 		741A0FB619FD031C00924C6C /* UIView+QHViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0FB419FD031C00924C6C /* UIView+QHViewExtend.m */; };
 		741A0FBD19FD062200924C6C /* QHCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0FBB19FD062200924C6C /* QHCommonUtil.m */; };
+		742405F91A0F985600EFB318 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 742405F81A0F985600EFB318 /* Images */; };
 		744ADFB81A06857E00BE5214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFB71A06857E00BE5214 /* UIKit.framework */; };
 		744ADFBA1A06859300BE5214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFB91A06859300BE5214 /* Foundation.framework */; };
 		744ADFBC1A06859B00BE5214 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFBB1A06859B00BE5214 /* CoreGraphics.framework */; };
@@ -26,11 +27,11 @@
 		744ADFEB1A06878300BE5214 /* WifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ADFEA1A06878300BE5214 /* WifiViewController.m */; };
 		744ADFED1A068C4D00BE5214 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFEC1A068C4D00BE5214 /* CFNetwork.framework */; };
 		744ADFEF1A068C5C00BE5214 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ADFEE1A068C5C00BE5214 /* libicucore.dylib */; };
+		746486771A0F9AF400995462 /* UIImage+QHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 746486761A0F9AF400995462 /* UIImage+QHImage.m */; };
 		74966BC319FEA0A000A9E99D /* QHFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74966BC219FEA0A000A9E99D /* QHFileHelper.m */; };
 		74966BC519FEAA0B00A9E99D /* hello.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74966BC419FEAA0B00A9E99D /* hello.txt */; };
 		74CA40271A0B6F240031E7FB /* docroot in Resources */ = {isa = PBXBuildFile; fileRef = 74CA40261A0B6F240031E7FB /* docroot */; };
 		74CA402F1A0B7B380031E7FB /* FileCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CA402E1A0B7B380031E7FB /* FileCollectionViewCell.m */; };
-		74CA403C1A0B82250031E7FB /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 74CA403B1A0B82250031E7FB /* Images */; };
 		74DE8F611A0BAE3800C0E399 /* QHDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DE8F601A0BAE3800C0E399 /* QHDialogView.m */; };
 		74DEDD1519F3FDAB00AA5A13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEDD1419F3FDAB00AA5A13 /* main.m */; };
 		74DEDD1819F3FDAB00AA5A13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEDD1719F3FDAB00AA5A13 /* AppDelegate.m */; };
@@ -61,6 +62,7 @@
 		741A0FBA19FD062200924C6C /* QHCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHCommonUtil.h; sourceTree = "<group>"; };
 		741A0FBB19FD062200924C6C /* QHCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHCommonUtil.m; sourceTree = "<group>"; };
 		741A0FBC19FD062200924C6C /* QHViewTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHViewTag.h; sourceTree = "<group>"; };
+		742405F81A0F985600EFB318 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		744ADFB71A06857E00BE5214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		744ADFB91A06859300BE5214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		744ADFBB1A06859B00BE5214 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,13 +90,15 @@
 		744ADFEA1A06878300BE5214 /* WifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiViewController.m; sourceTree = "<group>"; };
 		744ADFEC1A068C4D00BE5214 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		744ADFEE1A068C5C00BE5214 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		746486711A0F9A2200995462 /* QHImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QHImport.h; sourceTree = "<group>"; };
+		746486751A0F9AF400995462 /* UIImage+QHImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QHImage.h"; sourceTree = "<group>"; };
+		746486761A0F9AF400995462 /* UIImage+QHImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QHImage.m"; sourceTree = "<group>"; };
 		74966BC119FEA0A000A9E99D /* QHFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHFileHelper.h; sourceTree = "<group>"; };
 		74966BC219FEA0A000A9E99D /* QHFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHFileHelper.m; sourceTree = "<group>"; };
 		74966BC419FEAA0B00A9E99D /* hello.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello.txt; sourceTree = "<group>"; };
 		74CA40261A0B6F240031E7FB /* docroot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docroot; sourceTree = "<group>"; };
 		74CA402D1A0B7B380031E7FB /* FileCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCollectionViewCell.h; sourceTree = "<group>"; };
 		74CA402E1A0B7B380031E7FB /* FileCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCollectionViewCell.m; sourceTree = "<group>"; };
-		74CA403B1A0B82250031E7FB /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		74DE8F5F1A0BAE3800C0E399 /* QHDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHDialogView.h; sourceTree = "<group>"; };
 		74DE8F601A0BAE3800C0E399 /* QHDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHDialogView.m; sourceTree = "<group>"; };
 		74DEDD0F19F3FDAB00AA5A13 /* USBDriveForChen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USBDriveForChen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,8 @@
 				741A0FB219FD031C00924C6C /* QHBasicViewController.m */,
 				741A0FB319FD031C00924C6C /* UIView+QHViewExtend.h */,
 				741A0FB419FD031C00924C6C /* UIView+QHViewExtend.m */,
+				746486751A0F9AF400995462 /* UIImage+QHImage.h */,
+				746486761A0F9AF400995462 /* UIImage+QHImage.m */,
 			);
 			path = ViewExtend;
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 				74966BC119FEA0A000A9E99D /* QHFileHelper.h */,
 				74966BC219FEA0A000A9E99D /* QHFileHelper.m */,
 				741A0FBC19FD062200924C6C /* QHViewTag.h */,
+				746486711A0F9A2200995462 /* QHImport.h */,
 			);
 			path = QHUtills;
 			sourceTree = "<group>";
@@ -255,7 +262,7 @@
 		74DEDD1219F3FDAB00AA5A13 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				74CA403B1A0B82250031E7FB /* Images */,
+				742405F81A0F985600EFB318 /* Images */,
 				741A0FB719FD041400924C6C /* USBDriveForChen.pch */,
 				74DEDD1319F3FDAB00AA5A13 /* Info.plist */,
 				74DEDD1419F3FDAB00AA5A13 /* main.m */,
@@ -374,7 +381,7 @@
 				74DEDD2319F3FDAB00AA5A13 /* LaunchScreen.xib in Resources */,
 				74DEDD2019F3FDAB00AA5A13 /* Images.xcassets in Resources */,
 				74CA40271A0B6F240031E7FB /* docroot in Resources */,
-				74CA403C1A0B82250031E7FB /* Images in Resources */,
+				742405F91A0F985600EFB318 /* Images in Resources */,
 				74966BC519FEAA0B00A9E99D /* hello.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +402,7 @@
 			files = (
 				744ADFE81A0686AA00BE5214 /* RegexKitLite.m in Sources */,
 				744ADFEB1A06878300BE5214 /* WifiViewController.m in Sources */,
+				746486771A0F9AF400995462 /* UIImage+QHImage.m in Sources */,
 				74DEDD1B19F3FDAB00AA5A13 /* ViewController.m in Sources */,
 				74DEDD1819F3FDAB00AA5A13 /* AppDelegate.m in Sources */,
 				74966BC319FEA0A000A9E99D /* QHFileHelper.m in Sources */,

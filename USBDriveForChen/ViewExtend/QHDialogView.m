@@ -92,11 +92,11 @@
     [topView addSubview:titleLabel];
     
     UIButton *cancelBtn2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *image = [UIImage imageNamed:@"images/other/dll_dialog_cancel_normal.png"];
+    UIImage *image = [UIImage imageByPath:@"other/dll_dialog_cancel_normal.png"];
     [cancelBtn2 setFrame:CGRectMake(_dialogView.width - mH*3 - 10, 0, mH*3, mH*3)];
     cancelBtn2.centerY = topView.centerY;
     [cancelBtn2 setBackgroundImage:image forState:UIControlStateNormal];
-    image = [UIImage imageNamed:@"images/other/dll_dialog_cancel_highlight.png"];
+    image = [UIImage imageByPath:@"other/dll_dialog_cancel_highlight.png"];
     [cancelBtn2 setBackgroundImage:image forState:UIControlStateHighlighted];
     [topView addSubview:cancelBtn2];
     [cancelBtn2 addTarget:self action:@selector(cancelDialog:) forControlEvents:UIControlEventTouchUpInside];
@@ -126,7 +126,7 @@
     [sureBtn setTitleColor:[QHCommonUtil stringTOColor:@"#c40001"] forState:UIControlStateNormal];
     [sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     [sureBtn setBackgroundColor:RGBA(247, 247, 247, 1)];
-    image = [UIImage imageNamed:@"images/other/dll_dialog_know_highlight.png"];
+    image = [UIImage imageByPath:@"other/dll_dialog_know_highlight.png"];
     [sureBtn setBackgroundImage:[image resizableImageWithCapInsets:UIEdgeInsetsMake(image.size.height/2, image.size.width/2, image.size.height/2, image.size.width/2)] forState:UIControlStateHighlighted];
     [_dialogView addSubview:sureBtn];
     [sureBtn addTarget:self action:@selector(sureDone:) forControlEvents:UIControlEventTouchUpInside];

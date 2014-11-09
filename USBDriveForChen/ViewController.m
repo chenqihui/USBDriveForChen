@@ -84,15 +84,15 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
     [QHFileHelper moveFileToDocument:@"hello" type:@"txt"];
     [QHFileHelper writeFile:@"bye.txt" content:@"good bye"];
     
-    _dicImgs = @{@"sound": [UIImage imageNamed:@"images/filesicon/img_file_sound.png"],
-                 @"video": [UIImage imageNamed:@"images/filesicon/img_file_video.png"],
-                 @"image": [UIImage imageNamed:@"images/filesicon/img_file_image.png"],
-                 @"pdf"  : [UIImage imageNamed:@"images/filesicon/img_file_pdf.png"],
-                 @"ppt"  : [UIImage imageNamed:@"images/filesicon/img_file_ppt.png"],
-                 @"rar"  : [UIImage imageNamed:@"images/filesicon/img_file_rar.png"],
-                 @"word" : [UIImage imageNamed:@"images/filesicon/img_file_word.png"],
-                 @"xls"  : [UIImage imageNamed:@"images/filesicon/img_file_xls.png"],
-                 @"other"  : [UIImage imageNamed:@"images/filesicon/img_file_default.png"]};
+    _dicImgs = @{@"sound": [UIImage imageByPath:@"filesIcon/img_file_sound.png"],
+                 @"video": [UIImage imageByPath:@"filesIcon/img_file_video.png"],
+                 @"image": [UIImage imageByPath:@"filesIcon/img_file_image.png"],
+                 @"pdf"  : [UIImage imageByPath:@"filesIcon/img_file_pdf.png"],
+                 @"ppt"  : [UIImage imageByPath:@"filesIcon/img_file_ppt.png"],
+                 @"rar"  : [UIImage imageByPath:@"filesIcon/img_file_rar.png"],
+                 @"word" : [UIImage imageByPath:@"filesIcon/img_file_word.png"],
+                 @"xls"  : [UIImage imageByPath:@"filesIcon/img_file_xls.png"],
+                 @"other": [UIImage imageByPath:@"filesIcon/img_file_default.png"]};
 }
 
 // load file list

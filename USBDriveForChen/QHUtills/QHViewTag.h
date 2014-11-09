@@ -20,9 +20,3 @@
 #define __async_main__ dispatch_async(dispatch_get_main_queue()
 
 #endif
-
-#import "UIView+QHViewExtend.h"
-#import "QHCommonUtil.h"
-#import "QHFileHelper.h"
-
-#import "QHBasicViewController.h"
