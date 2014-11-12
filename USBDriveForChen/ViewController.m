@@ -8,20 +8,20 @@
 
 #import "ViewController.h"
 
-#import "UtilBottomControl.h"
+//#import "UtilBottomControl.h"
 #import "WifiViewController.h"
 #import "FileCollectionViewCell.h"
 #import "QHDialogView.h"
 
-@interface ViewController ()<UtilBottomControlDelegate, UICollectionViewDataSource, UICollectionViewDelegate, FileCollectionViewCellDelegate>
+@interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, FileCollectionViewCellDelegate>//UtilBottomControlDelegate,
 {
-    NSArray *_arData;
     NSMutableArray *_arFiles;
     UICollectionView *_filesListView;
     NSDictionary *_dicImgs;
     BOOL _bTransform;
     UITapGestureRecognizer *_tapGestureTel2;
-    BOOL _bLine;
+    
+    UISearchBar *_filesSearch;
 }
 
 @end
@@ -44,10 +44,10 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.title = @"我的U盘";
     
-    NSUInteger bottomHeight = 44;
-    UtilBottomControl *utilbottomC = [[UtilBottomControl alloc] initWtihFrame:CGRectMake(0, self.view.height - bottomHeight, self.view.width, bottomHeight) data:_arData];
-    utilbottomC.delegate = self;
-    [self.view addSubview:utilbottomC];
+    UIBarButtonItem *wifiItem = [[UIBarButtonItem alloc] initWithTitle:@"wifi" style:UIBarButtonItemStylePlain target:self action:@selector(wifiFiles)];
+    self.navigationItem.leftBarButtonItem = wifiItem;
+    UIBarButtonItem *searchItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchinFiles)];
+    self.navigationItem.rightBarButtonItem = searchItem;
     
     float nWidth = self.view.width/4;
     float nHeight = nWidth * 1.15;
@@ -56,15 +56,13 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
     _flowLayout.minimumLineSpacing = 0;
     _flowLayout.minimumInteritemSpacing = 0;//列距
     
-    CGRect frame = CGRectMake(0, self.navigationController.navigationBar.bottom, self.view.width, self.view.height - self.navigationController.navigationBar.bottom - utilbottomC.height);
-    _filesListView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
+//    CGRect frame = CGRectMake(0, self.navigationController.navigationBar.bottom, self.view.width, self.view.height - self.navigationController.navigationBar.bottom);
+    _filesListView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:_flowLayout];
     _filesListView.backgroundColor = [UIColor whiteColor];
     _filesListView.dataSource = self;
     _filesListView.delegate = self;
     [_filesListView registerClass:[FileCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     [self.view addSubview:_filesListView];
-    
-    [self showList];
     
     UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(LongPressGestureRecognizer:)];
     [_filesListView addGestureRecognizer:lpgr];
@@ -80,7 +78,6 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
 
 - (void)initData
 {
-    _arData = @[@"wifi", @"fold", @"photo", @"order", @"show"];
     [QHFileHelper moveFileToDocument:@"hello" type:@"txt"];
     [QHFileHelper writeFile:@"bye.txt" content:@"good bye"];
     
@@ -127,26 +124,6 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
     return nil;
 }
 
-- (void)showList
-{
-    float nWidth = self.view.width/4;
-    float nHeight = nWidth * 1.15;
-    UICollectionViewFlowLayout *_flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    if (_bLine)
-    {
-        nHeight = nWidth * 1.15;
-        nWidth = self.view.width;
-    }else
-    {
-//        nWidth = self.view.width/4;
-    }
-    _flowLayout.itemSize = CGSizeMake(nWidth, nHeight);
-    _flowLayout.minimumLineSpacing = 0;
-    _flowLayout.minimumInteritemSpacing = 0;//列距
-    
-    [_filesListView setCollectionViewLayout:_flowLayout animated:YES];
-}
-
 #pragma mark - action
 
 - (void)openFile:(NSString *)file
@@ -156,7 +133,7 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     UIViewController *webFileViewController = [[UIViewController alloc] init];
     webFileViewController.view.frame = [UIScreen mainScreen].bounds;
-    webFileViewController.navigationItem.title = @"文件查看";
+    webFileViewController.navigationItem.title = [file stringByDeletingPathExtension];
     
     UIWebView* webView=[[UIWebView alloc] initWithFrame:self.view.frame];
     webView.scalesPageToFit=YES;
@@ -199,6 +176,20 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
     [QHCommonUtil EndWobble:_filesListView];
 }
 
+- (void)searchinFiles
+{
+    if (_filesSearch == nil)
+    {
+        _filesSearch = [[UISearchBar alloc] initWithFrame:CGRectMake(0, -self.navigationController.navigationBar.height, self.view.width, 30)];
+    }
+}
+
+- (void)wifiFiles
+{
+//    WifiViewController *wifiVC = [[WifiViewController alloc] init];
+//    [self.navigationController pushViewController:wifiVC animated:YES];
+}
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -210,6 +201,7 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
 {
     FileCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
+//    cell.backgroundColor = [QHCommonUtil getRandomColor];
     // Configure the cell
     NSArray *ar = [[_arFiles objectAtIndex:indexPath.row] componentsSeparatedByString:@"."];
     NSString *name = [ar objectAtIndex:0];
@@ -237,30 +229,6 @@ static NSString * const reuseIdentifier = @"collectionViewCell";
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     NSString *file = [_arFiles objectAtIndex:indexPath.row];
     [self openFile:file];
-}
-
-#pragma mark - UtilBottomControlDelegate
-
-- (void)selectIndex:(NSUInteger)index
-{
-    switch (index)
-    {
-        case 1://wifi
-        {
-            WifiViewController *wifiVC = [[WifiViewController alloc] init];
-            [self.navigationController pushViewController:wifiVC animated:YES];
-            
-            break;
-        }
-        case 5:
-        {
-            _bLine = !_bLine;
-            [self showList];
-            break;
-        }
-        default:
-            break;
-    }
 }
 
 #pragma mark = FileCollectionViewCellDelegate
